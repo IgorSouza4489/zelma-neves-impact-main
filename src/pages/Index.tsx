@@ -23,7 +23,7 @@ const Index = () => {
       {/* Logo */}
       <div className="w-12 h-12 rounded-full overflow-hidden flex items-center justify-center">
         <img 
-          src="src\461041756_2670755179774872_3853340689919885439_n.jpg"  
+          src="https://raw.githubusercontent.com/IgorSouza4489/zelma-neves-impact-main/39892b8f5f7e7e479cd8909b64ccd6b28603e5ea/src/461041756_2670755179774872_3853340689919885439_n.jpg"  
           alt="Instituto Zelma Neves" 
           className="w-full h-full object-cover"
         />
