@@ -16,26 +16,35 @@ import {
 const Index = () => {
   return (
     <div className="min-h-screen bg-background">
-      {/* Header */}
-      <header className="bg-background border-b sticky top-0 z-50">
-        <div className="container mx-auto px-4 py-4 flex items-center justify-between">
-          <div className="flex items-center space-x-3">
-            <div className="w-12 h-12 bg-gradient-to-br from-primary to-secondary rounded-full flex items-center justify-center">
-              <span className="text-white font-bold text-lg">IZN</span>
-            </div>
-            <div>
-              <h1 className="text-xl font-bold text-foreground">Instituto Zelma Neves</h1>
-              <p className="text-sm text-muted-foreground">Educação • Esporte • Saúde • Cultura</p>
-            </div>
-          </div>
-          <nav className="hidden md:flex space-x-8">
-            <a href="#sobre" className="text-foreground hover:text-primary transition-all duration-300 story-link">Sobre</a>
-            <a href="#areas" className="text-foreground hover:text-primary transition-all duration-300 story-link">Áreas</a>
-            <a href="#missao" className="text-foreground hover:text-primary transition-all duration-300 story-link">Missão</a>
-            <a href="#contato" className="text-foreground hover:text-primary transition-all duration-300 story-link">Contato</a>
-          </nav>
-        </div>
-      </header>
+{/* Header */}
+<header className="bg-background border-b sticky top-0 z-50">
+  <div className="container mx-auto px-4 py-4 flex items-center justify-between">
+    <div className="flex items-center space-x-3">
+      {/* Logo */}
+      <div className="w-12 h-12 rounded-full overflow-hidden flex items-center justify-center">
+        <img 
+          src="src\461041756_2670755179774872_3853340689919885439_n.jpg"  
+          alt="Instituto Zelma Neves" 
+          className="w-full h-full object-cover"
+        />
+      </div>
+
+      <div>
+        <h1 className="text-xl font-bold text-foreground">Instituto Zelma Neves</h1>
+        <p className="text-sm text-muted-foreground">
+          Educação • Esporte • Saúde • Cultura
+        </p>
+      </div>
+    </div>
+
+    <nav className="hidden md:flex space-x-8">
+      <a href="#sobre" className="text-foreground hover:text-primary transition-all duration-300 story-link">Sobre</a>
+      <a href="#areas" className="text-foreground hover:text-primary transition-all duration-300 story-link">Áreas</a>
+      <a href="#missao" className="text-foreground hover:text-primary transition-all duration-300 story-link">Missão</a>
+      <a href="#contato" className="text-foreground hover:text-primary transition-all duration-300 story-link">Contato</a>
+    </nav>
+  </div>
+</header>
 
       {/* Hero Section */}
       <section className="relative bg-gradient-to-br from-primary via-primary/90 to-secondary text-white py-24 overflow-hidden">
