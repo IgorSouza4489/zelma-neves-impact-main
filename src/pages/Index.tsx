@@ -218,7 +218,7 @@ const Index = () => {
                 </CardHeader>
                 <CardContent>
                   <p className="text-muted-foreground">
-                    (11) 9999-9999
+                    (21) 99464-5781
                   </p>
                 </CardContent>
               </Card>
