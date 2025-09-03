@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
-import Header from "@/components/ui/Header";
-import Hero from "@/components/ui/Hero"; 
+import { Header } from "@/components/ui/header";
+import { Hero } from "@/components/ui/hero"; 
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Separator } from "@/components/ui/separator";
 import { 
