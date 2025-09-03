@@ -21,14 +21,14 @@ const Index = () => {
   <div className="container mx-auto px-4 py-4 flex items-center justify-between">
     <div className="flex items-center space-x-3">
       {/* Logo */}
-      <div className="w-12 h-12 rounded-full overflow-hidden flex items-center justify-center">
-        <img 
-          src="https://raw.githubusercontent.com/IgorSouza4489/zelma-neves-impact-main/39892b8f5f7e7e479cd8909b64ccd6b28603e5ea/src/461041756_2670755179774872_3853340689919885439_n.jpg"  
-          alt="Instituto Zelma Neves" 
-          className="w-full h-full object-cover"
-        />
-      </div>
-
+{/* Logo */}
+<div className="w-20 h-20 rounded-full overflow-hidden flex items-center justify-center">
+  <img 
+    src="https://raw.githubusercontent.com/IgorSouza4489/zelma-neves-impact-main/39892b8f5f7e7e479cd8909b64ccd6b28603e5ea/src/461041756_2670755179774872_3853340689919885439_n.jpg"  
+    alt="Instituto Zelma Neves" 
+    className="w-full h-full object-cover"
+  />
+</div>
       <div>
         <h1 className="text-xl font-bold text-foreground">Instituto Zelma Neves</h1>
         <p className="text-sm text-muted-foreground">
