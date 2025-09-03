@@ -2,7 +2,19 @@ import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
 
-const Header = () => {
+// Definindo props (se quiser links dinâmicos depois)
+interface HeaderProps {
+  links?: { href: string; label: string }[];
+}
+
+const Header: React.FC<HeaderProps> = ({ 
+  links = [
+    { href: "#sobre", label: "Sobre" },
+    { href: "#areas", label: "Áreas" },
+    { href: "#missao", label: "Missão" },
+    { href: "#contato", label: "Contato" }
+  ] 
+}) => {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
@@ -27,10 +39,15 @@ const Header = () => {
 
         {/* Links Desktop */}
         <nav className="hidden md:flex space-x-8">
-          <a href="#sobre" className="text-foreground hover:text-primary transition-all">Sobre</a>
-          <a href="#areas" className="text-foreground hover:text-primary transition-all">Áreas</a>
-          <a href="#missao" className="text-foreground hover:text-primary transition-all">Missão</a>
-          <a href="#contato" className="text-foreground hover:text-primary transition-all">Contato</a>
+          {links.map((link) => (
+            <a
+              key={link.href}
+              href={link.href}
+              className="text-foreground hover:text-primary transition-all"
+            >
+              {link.label}
+            </a>
+          ))}
         </nav>
 
         {/* Botão Mobile */}
@@ -48,10 +65,16 @@ const Header = () => {
       {/* Dropdown Mobile */}
       {menuOpen && (
         <nav className="md:hidden bg-background border-t px-4 py-4 space-y-4">
-          <a href="#sobre" className="block text-foreground hover:text-primary">Sobre</a>
-          <a href="#areas" className="block text-foreground hover:text-primary">Áreas</a>
-          <a href="#missao" className="block text-foreground hover:text-primary">Missão</a>
-          <a href="#contato" className="block text-foreground hover:text-primary">Contato</a>
+          {links.map((link) => (
+            <a
+              key={link.href}
+              href={link.href}
+              className="block text-foreground hover:text-primary"
+              onClick={() => setMenuOpen(false)} // fecha ao clicar
+            >
+              {link.label}
+            </a>
+          ))}
         </nav>
       )}
     </header>

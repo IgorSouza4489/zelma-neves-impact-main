@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { Header } from "@/components/ui/header";
+import Header from "@/components/ui/Header";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Separator } from "@/components/ui/separator";
 import { 
@@ -16,8 +16,7 @@ import {
 
 const Index = () => {
   return (
-    <div className="min-h-screen bg-background">
-    <div className="min-h-screen bg-background">
+        <div className="min-h-screen bg-background">
       {/* Header */}
       <Header />
 
@@ -190,7 +189,7 @@ const Index = () => {
                 </CardHeader>
                 <CardContent>
                   <p className="text-muted-foreground">
-                    contato@institutozelmaneves.org.br
+                    zninstituto@gmail.com
                   </p>
                 </CardContent>
               </Card>
