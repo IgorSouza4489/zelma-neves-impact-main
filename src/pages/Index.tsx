@@ -227,7 +227,7 @@ const Index = () => {
               Transformando vidas e construindo um futuro melhor para nossa comunidade.
             </p>
             <p className="text-white/60 text-sm">
-              © 2024 Instituto Zelma Neves. Todos os direitos reservados.
+              © 2025 Instituto Zelma Neves. Todos os direitos reservados.
             </p>
           </div>
         </div>
