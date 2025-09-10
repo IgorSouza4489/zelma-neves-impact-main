@@ -196,7 +196,7 @@ const Index = () => {
                 </CardHeader>
                 <CardContent>
                   <p className="text-muted-foreground">
-                    Baixada Fluminense - RJ<br />
+                   Rua Vicente Guerreiro Lote 01 Quadra 51, Pantanal,<br /> Duque de Caxias RJ Cep 25040-570<br />
                     Brasil
                   </p>
                 </CardContent>
