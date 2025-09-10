@@ -14,6 +14,7 @@ import {
   Phone,
   MapPin
 } from "lucide-react";
+import { FaWhatsapp } from "react-icons/fa";
 
 const Index = () => {
   return (
@@ -159,52 +160,75 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Contact Section */}
-      <section id="contato" className="py-20 bg-background">
-        <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto">
-            <h2 className="text-4xl font-bold mb-12 text-center text-foreground">Entre em Contato</h2>
-            <div className="grid md:grid-cols-3 gap-8">
-              <Card className="text-center border-2 hover:shadow-lg transition-shadow">
-                <CardHeader>
-                  <Mail className="h-8 w-8 text-primary mx-auto mb-2" />
-                  <CardTitle className="text-lg">Email</CardTitle>
-                </CardHeader>
-                <CardContent>
-                  <p className="text-muted-foreground">
-                    zninstituto@gmail.com
-                  </p>
-                </CardContent>
-              </Card>
-              
-              <Card className="text-center border-2 hover:shadow-lg transition-shadow">
-                <CardHeader>
-                  <Phone className="h-8 w-8 text-primary mx-auto mb-2" />
-                  <CardTitle className="text-lg">Telefone</CardTitle>
-                </CardHeader>
-                <CardContent>
-                  <p className="text-muted-foreground">
-                    (21) 99464-5781
-                  </p>
-                </CardContent>
-              </Card>
-              
-              <Card className="text-center border-2 hover:shadow-lg transition-shadow">
-                <CardHeader>
-                  <MapPin className="h-8 w-8 text-primary mx-auto mb-2" />
-                  <CardTitle className="text-lg">Endereço</CardTitle>
-                </CardHeader>
-                <CardContent>
-                  <p className="text-muted-foreground">
-                   Rua Vicente Guerreiro Lote 01 Quadra 51, Pantanal,<br /> Duque de Caxias RJ Cep 25040-570<br />
-                    Brasil
-                  </p>
-                </CardContent>
-              </Card>
-            </div>
-          </div>
-        </div>
-      </section>
+{/* Contact Section */}
+<section id="contato" className="py-20 bg-background">
+  <div className="container mx-auto px-4 max-w-6xl">
+    <div className="text-center mb-12">
+      <h2 className="text-4xl font-bold text-foreground">Entre em Contato</h2>
+    </div>
+
+    <div className="grid md:grid-cols-2 lg:grid-cols-2 gap-8">
+      
+      <Card className="text-center border-2 hover:shadow-lg transition-shadow min-h-[220px]">
+        <CardHeader>
+          <Mail className="h-8 w-8 text-primary mx-auto mb-2" />
+          <CardTitle className="text-lg">Email</CardTitle>
+        </CardHeader>
+        <CardContent>
+          <p className="text-muted-foreground">zninstituto@gmail.com</p>
+        </CardContent>
+      </Card>
+
+      <Card className="text-center border-2 hover:shadow-lg transition-shadow min-h-[220px]">
+        <CardHeader>
+          <Phone className="h-8 w-8 text-primary mx-auto mb-2" />
+          <CardTitle className="text-lg">Telefone</CardTitle>
+        </CardHeader>
+        <CardContent>
+          <p className="text-muted-foreground">(21) 97066-7740</p>
+        </CardContent>
+      </Card>
+
+      <Card className="text-center border-2 hover:shadow-lg transition-shadow min-h-[220px]">
+        <CardHeader>
+          <MapPin className="h-8 w-8 text-primary mx-auto mb-2" />
+          <CardTitle className="text-lg">Endereço</CardTitle>
+        </CardHeader>
+        <CardContent>
+          <a
+            href="https://www.google.com/maps?q=Rua+Vicente+Guerreiro+Lote+01+Quadra+51,+Pantanal,+Duque+de+Caxias+RJ,+25040-570"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-muted-foreground hover:underline"
+          >
+            Rua Vicente Guerreiro Lote 01 Quadra 51, Pantanal,<br />
+            Duque de Caxias RJ <br />
+            Cep 25040-570<br />
+            Brasil
+          </a>
+        </CardContent>
+      </Card>
+
+      <Card className="text-center border-2 hover:shadow-lg transition-shadow min-h-[220px]">
+        <CardHeader>
+          <FaWhatsapp className="h-8 w-8 text-green-500 mx-auto mb-2" />
+          <CardTitle className="text-lg">WhatsApp</CardTitle>
+        </CardHeader>
+        <CardContent>
+          <a 
+            href="https://chat.whatsapp.com/seu-link-do-grupo" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="text-green-600 font-medium hover:underline"
+          >
+            Entrar no Grupo
+          </a>
+        </CardContent>
+      </Card>
+
+    </div>
+  </div>
+</section>
 
       {/* Footer */}
       <footer className="bg-primary text-white py-12">
