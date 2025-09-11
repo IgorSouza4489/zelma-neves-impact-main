@@ -216,7 +216,7 @@ const Index = () => {
         </CardHeader>
         <CardContent>
           <a 
-            href="https://chat.whatsapp.com/seu-link-do-grupo" 
+            href="https://chat.whatsapp.com/BRq8UEsmnSCLEf0lQoVxx3?mode=ems_wa_t" 
             target="_blank" 
             rel="noopener noreferrer"
             className="text-green-600 font-medium hover:underline"
